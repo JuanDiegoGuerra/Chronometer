@@ -21,6 +21,15 @@ const pause = () => {
     clearInterval(stopwatchInterval);
 }
 
+const stop = () => {
+    secondsSphere.style.transform = 'rotate(-90deg) translateX(60px)';
+    secondsSphere.style.animation = 'none';
+    playPauseButton.classList.remove('running');
+    runningTime = 0;
+    clearInterval(stopwatchInterval);
+    stopwatch.textContent = '00:00';
+}
+
 const start = () => {
     secondsSphere.style.animation = 'rotacion 60s linear infinite';
     let startTime = Date.now() - runningTime;
