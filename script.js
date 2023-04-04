@@ -15,3 +15,13 @@ const playPause = () => {
         pause();
     }
 }
+
+const start = () => {
+    secondsSphere.style.animation = 'rotacion 60s linear infinite';
+    let startTime = Date.now() - runningTime;
+    secondsSphere.style.animationPlayState = 'running';
+    stopwatchInterval = setInterval( () => {
+        runningTime = Date.now() - startTime;
+        stopwatch.textContent = calculateTime(runningTime);
+    }, 1000)
+}
