@@ -16,6 +16,11 @@ const playPause = () => {
     }
 }
 
+const pause = () => {
+    secondsSphere.style.animationPlayState = 'paused';
+    clearInterval(stopwatchInterval);
+}
+
 const start = () => {
     secondsSphere.style.animation = 'rotacion 60s linear infinite';
     let startTime = Date.now() - runningTime;
