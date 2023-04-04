@@ -1,3 +1,7 @@
+body {
+    background-color: #333;
+}
+
 main {
     font-family: 'Roboto Mono', monospace;
     position: relative;
