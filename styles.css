@@ -85,3 +85,12 @@ main {
     transform: scale(1.2);
     transition: 0.5s;
 }
+
+/* Glitch Title */
+#title{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 100px;
+    font-family: lato;
+    text-shadow: 7px 0px #ff0000 7px 0px #00ffff;
+}
